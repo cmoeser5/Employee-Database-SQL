@@ -8,3 +8,10 @@ This project consists of designing the tables that will hold the CSV data, impor
 1. Data Modeling
 2. Data Engineering
 3. Data Analysis
+
+## Data Modeling
+After inspecting the CSVs, create an ERD using Quick Database Diagrams.
+
+![erd](SQL/Images/ERD.png)
+
+
