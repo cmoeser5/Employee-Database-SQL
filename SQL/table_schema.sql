@@ -1,15 +1,18 @@
+-- create titles table
 CREATE TABLE titles (
     title_id VARCHAR   NOT NULL,
     title VARCHAR   NOT NULL,
     PRIMARY KEY (title_id)
 );
 
+-- create departments table
 CREATE TABLE departments (
     dept_no VARCHAR   NOT NULL,
     dept_name VARCHAR   NOT NULL,
     PRIMARY KEY (dept_no)
 );
 
+-- create department employees table
 CREATE TABLE dept_emp (
     emp_no INT   NOT NULL,
     dept_no VARCHAR   NOT NULL,
@@ -18,6 +21,7 @@ CREATE TABLE dept_emp (
     PRIMARY KEY (emp_no, dept_no)
 );
 
+-- create department managers table
 CREATE TABLE dept_manager (
     dept_no VARCHAR   NOT NULL,
     emp_no INT   NOT NULL,
@@ -26,6 +30,7 @@ CREATE TABLE dept_manager (
     PRIMARY KEY (dept_no, emp_no)
 );
 
+-- create employees table
 CREATE TABLE employees (
     emp_no INT   NOT NULL,
     emp_title_id VARCHAR NOT NULL,
@@ -38,6 +43,7 @@ CREATE TABLE employees (
     PRIMARY KEY (emp_no)
 );
 
+-- create salaries table
 CREATE TABLE salaries (
     emp_no INT   NOT NULL,
     salary INT   NOT NULL,
