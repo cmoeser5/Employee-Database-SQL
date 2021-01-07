@@ -72,6 +72,8 @@ CREATE TABLE salaries (
 );
 ```
 ## Data Analysis
+From the tables created, the following analysis was conducted:
+
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
 ```sql
