@@ -145,3 +145,47 @@ FROM employees
 GROUP BY last_name
 ORDER BY COUNT(last_name) DESC;
 ```
+
+## Bonus
+
+In a Jupyter Notebook, import the SQL database into Pandas and create an engine via SQLalchemy to read the tables and create the following graphs:
+
+1. A histogram to visualise the most common salary ranges for employees.
+2. A bar chart of average salary by title.
+
+#### Import the SQL database into Pandas
+
+```python
+# Dependencies and Setup
+from sqlalchemy import create_engine
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# create connection string to postgres 
+
+connection_str = f"database_type://user:password@host:port/database"
+    
+# create engine 
+engine = create_engine(connection_str)
+```
+
+#### Histogram of Salary Ranges for Employees
+
+```python
+# query all records in salaries
+salaries_data = pd.read_sql("SELECT * FROM salaries", engine)
+
+# create histogram
+plt.hist(combined_title_data["salary"])
+# create x and y labels
+plt.xlabel("Salary Range")
+plt.ylabel("Number of Employees")
+plt.title("Salary Range Per Employee")
+plt.savefig("Images/hist.png")
+plt.show()
+```
+![hist](SQL/Images/hist.png)
+
+
+
