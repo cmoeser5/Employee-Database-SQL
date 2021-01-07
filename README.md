@@ -163,7 +163,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # create connection string to postgres 
-
 connection_str = f"database_type://user:password@host:port/database"
     
 # create engine 
@@ -188,4 +187,22 @@ plt.show()
 ![hist](SQL/Images/hist.png)
 
 
+#### Bar Chart of Average Salary by Job Title
 
+```python
+# set axis and tick
+x_axis = revised_grouped_df["title"]
+ticks = np.arange(len(x_axis))
+y_axis = revised_grouped_df["salary"]
+ 
+# bar chart
+plt.bar(x_axis, y_axis, align="center")
+
+plt.xticks(ticks, x_axis, rotation="vertical")
+plt.ylabel("Salaries")
+plt.xlabel("Employee Titles")
+plt.title("Average Employee Salary By Title")
+plt.savefig("Images/bar.png")
+plt.show()
+```
+![bar](SQL/Images/bar.png)
