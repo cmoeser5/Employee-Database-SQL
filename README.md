@@ -1,21 +1,21 @@
-# sql_challenge
+# SQL Employee Data
 
 ## Background
-Conduct research on employees working in the 1980s and 1990s at the company Pewlett Hackard. The only data that remains available from the time period are 6 CSV files.
+Conducted research on employees working in the 1980s and 1990s at the fictional company using 6 CSV files containing various data, including: title, department name, employee numbers, employee names, salary and hire dates. 
 
-## Objectives
+## Objective
 This project consists of designing the tables that will hold the CSV data, import the CSVs into a SQL database, and answer a series of questions about the data. The task consist of:
 1. Data Modeling
 2. Data Engineering
 3. Data Analysis
 
 ## Data Modeling
-After inspecting the CSVs, create an ERD using Quick Database Diagrams.
+After inspecting the CSVs, I created an ERD using Quick Database Diagrams to better visualize the dataset.
 
-![erd](SQL/Images/ERD.png)
+![erd](SQL/Images/employees_erd.png)
 
 ## Data Engineering
-Create a table schema for each of the 6 CSV files with specific data types, primary keys, foreign keys, and constraints.
+Created a table schema for each of the 6 CSV files with specific data types, primary keys, foreign keys, and constraints.
 
 ```sql
 -- create titles table
