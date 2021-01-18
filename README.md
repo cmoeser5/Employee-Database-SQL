@@ -147,15 +147,9 @@ FROM employees
 GROUP BY last_name
 ORDER BY COUNT(last_name) DESC;
 ```
+### Salary Analysis
 
-## Bonus
-
-In a Jupyter Notebook, import the SQL database into Pandas and create an engine via SQLalchemy to read the tables and create the following graphs:
-
-1. A histogram to visualise the most common salary ranges for employees.
-2. A bar chart of average salary by title.
-
-#### Import the SQL database into Pandas
+Imported the SQL database into Pandas to read tables and generated graphs on salary ranges for employees and average salary by title.
 
 ```python
 # Dependencies and Setup
